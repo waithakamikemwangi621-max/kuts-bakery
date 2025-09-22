@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>kutus sweet Bakery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1> kutus sweet Bakery</h1>
+    <p>Freshly Baked Happiness Every Day</p>
+  </header>
+
+  <section>
+    <h2>Place Your Order</h2>
+    <form action="save_order.php" method="POST">
+      <label>Full Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Select Item:</label>
+      <select name="item" required>
+        <option value="Chocolate Cake">Chocolate Cake - ksh150</option>
+        <option value="Buttery Croissant">Buttery Croissant - ksh120</option>
+        <option value="Vanilla Cupcake">Vanilla Cupcake - ksh180</option>
+        <option value="fruit cake">fruit cake - ksh300</option>
+        <option value="lemon drizzle cake">lemon drizzle cake - ksh500</option>
+        <option value="red velvet cake">red velvet cake - ksh1200</option>
+        <option value="buttercream cake">buttercream - ksh600</option>
+      </select>
+
+      <label>Quantity:</label>
+      <input type="number" name="quantity" min="1" value="1" required>
+
+      <label>Delivery Address:</label>
+      <textarea name="address" required></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+</body>
+</html>
